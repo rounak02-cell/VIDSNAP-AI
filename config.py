@@ -1,1 +1,10 @@
-ELEVENLABS_API_KEY = "sk_ed5194e19b319c6dee9a658c6cb4b93966ce59251b01974a"
+import os
+
+ELEVENLABS_API_KEY = os.getenv("ELEVENLABS_API_KEY")
+
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+ELEVENLABS_API_KEY = os.getenv("ELEVENLABS_API_KEY")
